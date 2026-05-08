@@ -71,11 +71,11 @@ Example: Student admission or enrollment process.
 The final successful outcome after completing the process.
 
 Example: Student successfully joined the college.
+| Salesforce Concept | Real-Time Example     |
+| ------------------ | --------------------- |
+| Account            | College               |
+| Contact            | Student               |
+| Lead               | New Admission Inquiry |
+| Opportunity        | Course Enrollment     |
+| Customer           | Admitted Student      |
 
-🎓 Real-Time Mapping – College Management System
-Salesforce Concept	Real-Time Example
-Account	College
-Contact	Student
-Lead	New Admission Inquiry
-Opportunity	Course Enrollment
-Customer	Admitted Student
