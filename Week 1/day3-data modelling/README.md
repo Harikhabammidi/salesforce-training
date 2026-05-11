@@ -146,66 +146,99 @@ Relationships:
 1 Student     → Many Enrollments  
 1 Course      → Many Enrollments
 
-Formula Fields
-Student Full Name
-Formula
+# Formula Fields
+
+## 1. Student Full Name
+
+### Formula
+
+```text
 First Name + " " + Last Name
-Purpose
+```
 
-Automatically joins first name and last name into a single value for consistency.
+### Purpose
 
-Seats Remaining
-Formula
+Automatically combines the student's first name and last name into a single full name field for better consistency and readability.
+
+---
+
+## 2. Seats Remaining
+
+### Formula
+
+```text
 Total Seats - Enrolled Students
-Purpose
+```
 
-Displays the number of seats left in a course automatically.
+### Purpose
 
-Student Percentage
-Formula
+Calculates the number of available seats left in a course automatically and helps avoid overbooking.
+
+---
+
+## 3. Student Percentage
+
+### Formula
+
+```text
 (Scored Marks / Total Marks) * 100
-Purpose
+```
 
-Calculates percentage accurately without manual calculation.
+### Purpose
 
-✅ Validation Rules
-Mandatory Email Validation
-Rule
+Automatically computes the percentage obtained by a student and reduces manual calculation errors.
 
-Email should not be left blank.
+---
 
-Purpose
+# Validation Rules
 
-Ensures proper communication and complete records.
+## 1. Mandatory Email Validation
 
-Valid Student Age
-Rule
+### Rule
 
-Age value must be greater than zero.
+The Email field cannot be empty.
 
-Purpose
+### Purpose
 
-Avoids incorrect or invalid student data.
+Ensures every student or faculty record contains proper contact information for communication.
 
-Seat Limit Validation
-Rule
+---
 
-Number of enrolled students cannot exceed total seats.
+## 2. Valid Student Age
 
-Purpose
+### Rule
 
-Prevents course over-allocation and maintains proper seat management.
+Student age must be greater than zero.
 
-Importance of Structured Enterprise Data
+### Purpose
 
-Structured data helps organizations organize and manage information efficiently. Instead of maintaining disconnected spreadsheets, enterprise systems use connected data models for better performance and accuracy.
+Prevents invalid or incorrect age entries from being stored in the system.
 
-Benefits in a College Management System
-Easy management of student and faculty records
-Better connection between departments and courses
-Faster report generation
-Reduced duplicate data
-Improved data consistency
-Supports automation and future analytics
+---
 
-Using structured relationships between objects makes data retrieval easier and improves overall system management.
+## 3. Seat Limit Validation
+
+### Rule
+
+Enrolled student count should not exceed the total seat capacity.
+
+### Purpose
+
+Helps maintain proper admission limits and prevents excess enrollments.
+
+---
+
+# Importance of Structured Enterprise Data
+
+Structured enterprise data allows organizations to manage information in an organized and connected format. Instead of using scattered spreadsheets, systems with structured data improve efficiency, accuracy, and scalability.
+
+## Benefits in a College Management System
+
+- Simplifies student and faculty management
+- Maintains clear relationships between departments and courses
+- Enables faster report generation
+- Reduces duplicate or inconsistent data
+- Improves overall data accuracy
+- Supports automation and analytical processes
+
+Structured object relationships make it easier to retrieve information, manage records efficiently, and improve decision-making across the organization.
