@@ -1,6 +1,6 @@
-# 🎓 College Management System using Salesforce Concepts
+# College Management System using Salesforce Concepts
 
-## 📌 Understanding Salesforce Basics
+##  Understanding Salesforce Basics
 
 ### Difference Between App, Object, Record, and Field
 
@@ -13,7 +13,7 @@
 
 ---
 
-# 📚 Standard Objects vs Custom Objects
+# Standard Objects vs Custom Objects
 
 | Standard Objects | Custom Objects |
 |------------------|----------------|
@@ -25,7 +25,7 @@
 
 ---
 
-# 🏫 College Management Data Structure
+# College Management Data Structure
 
 ## Student Object
 
@@ -83,7 +83,7 @@ Maintains department information.
 
 ---
 
-# 🔗 Relationships Between Objects
+#  Relationships Between Objects
 
 | Parent | Child | Relationship |
 |--------|-------|--------------|
@@ -95,16 +95,117 @@ Maintains department information.
 
 ---
 
-# 🗂 Data Model Overview
+# Data Model Diagram
 
-```text
-Department
-   ├── Students
-   ├── Faculty
-   └── Courses
+                           +---------------------------+
+                           |        Department         |
+                           +---------------------------+
+                           | Dept ID                   |
+                           | Dept Name                 |
+                           | Head of Department        |
+                           +---------------------------+
+                              /           |           \
+                             /            |            \
+                            /             |             \
+                           /              |              \
+                          v               v               v
 
-Faculty
-   └── Courses
+               +----------------+   +----------------+   +----------------+
+               |    Student     |   |    Faculty     |   |     Course     |
+               +----------------+   +----------------+   +----------------+
+               | Student ID     |   | Faculty ID     |   | Course ID      |
+               | Student Name   |   | Faculty Name   |   | Course Name    |
+               | Email          |   | Email          |   | Seat Capacity  |
+               | Mobile Number  |   | Expertise      |   | Seats Left     |
+               | Semester       |   | Experience     |   | Credits        |
+               +----------------+   +----------------+   +----------------+
+                        \                    |                    /
+                         \                   |                   /
+                          \                  |                  /
+                           \                 |                 /
+                            \                |                /
+                             \               |               /
+                              \              |              /
+                               +--------------------------+
+                               |      Enrollment Hub      |
+                               +--------------------------+
+                               | Enrollment ID            |
+                               | Student ID               |
+                               | Course ID                |
+                               | Enrollment Date          |
+                               | Status                   |
+                               +--------------------------+
 
-Course
-   └── Students
+
+Relationships:
+
+1 Department  → Many Students  
+1 Department  → Many Faculty Members  
+1 Department  → Many Courses  
+1 Faculty     → Many Courses  
+1 Student     → Many Enrollments  
+1 Course      → Many Enrollments
+
+Formula Fields
+Student Full Name
+Formula
+First Name + " " + Last Name
+Purpose
+
+Automatically joins first name and last name into a single value for consistency.
+
+Seats Remaining
+Formula
+Total Seats - Enrolled Students
+Purpose
+
+Displays the number of seats left in a course automatically.
+
+Student Percentage
+Formula
+(Scored Marks / Total Marks) * 100
+Purpose
+
+Calculates percentage accurately without manual calculation.
+
+✅ Validation Rules
+Mandatory Email Validation
+Rule
+
+Email should not be left blank.
+
+Purpose
+
+Ensures proper communication and complete records.
+
+Valid Student Age
+Rule
+
+Age value must be greater than zero.
+
+Purpose
+
+Avoids incorrect or invalid student data.
+
+Seat Limit Validation
+Rule
+
+Number of enrolled students cannot exceed total seats.
+
+Purpose
+
+Prevents course over-allocation and maintains proper seat management.
+
+Importance of Structured Enterprise Data
+
+Structured data helps organizations organize and manage information efficiently. Instead of maintaining disconnected spreadsheets, enterprise systems use connected data models for better performance and accuracy.
+
+Benefits in a College Management System
+Easy management of student and faculty records
+Better connection between departments and courses
+Faster report generation
+Reduced duplicate data
+Improved data consistency
+Supports automation and future analytics
+
+Using structured relationships between objects makes data retrieval easier and improves overall system management.
