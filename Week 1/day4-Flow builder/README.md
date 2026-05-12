@@ -1,114 +1,114 @@
-# Flow Builder and Process Automation
+# Salesforce Flow Builder and Business Automation
 
-## 1. Introduction to Flow Builder
+## 1. Understanding Flow Builder
 
-Flow Builder is a Salesforce tool that allows users to automate tasks and business operations using a visual interface instead of coding. It helps organizations simplify processes such as record updates, notifications, approvals, and data collection.
+Flow Builder is a declarative automation tool in Salesforce used to design and automate business operations through a graphical interface. It allows users to automate tasks, manage records, trigger actions, and improve workflow efficiency without programming.
 
 ---
 
-# 2. Different Types of Flows
+# 2. Categories of Flows
 
 ## Screen Flow
 
-Screen Flow is used when user interaction is required during the process.
+Screen Flow is used when information must be collected directly from users during the execution of a process.
 
-### Main Features
+### Characteristics
 
-* Displays screens to users
-* Collects data through forms
-* Guides users step-by-step
+* Includes interactive screens
+* Accepts user responses
+* Useful for guided workflows
 
 ### Example
 
-Course admission process where students enter personal and academic details.
+Library book issue form where students submit book details and personal information.
 
 ---
 
 ## Record-Triggered Flow
 
-Record-Triggered Flow runs automatically whenever a record is created, modified, or deleted.
+Record-Triggered Flow automatically executes whenever changes occur in Salesforce records.
 
-### Main Features
+### Characteristics
 
-* Works automatically in the background
-* No manual interaction required
-* Executes actions instantly based on record changes
+* Runs automatically after record events
+* No user involvement required
+* Helps automate repetitive tasks
 
 ### Example
 
-Automatically assigning a mentor when a new student record is created.
+Automatically updating hostel room availability after student allocation.
 
 ---
 
-# 3. Automation Use Cases
+# 3. Automation Scenarios
 
-## 1. Welcome Email to Students
+## 1. Automatic Admission Confirmation
 
-Automatically send a welcome message after successful student registration.
-
----
-
-## 2. Automatic Course Seat Management
-
-Update the number of available seats whenever a student enrolls in a course.
+Send a confirmation message after successful admission approval.
 
 ---
 
-## 3. Faculty Alert System
+## 2. Library Due Date Alert
 
-Notify faculty members when enrollment reaches maximum capacity.
-
----
-
-## 4. Student Roll Number Generation
-
-Automatically generate unique roll numbers for newly admitted students.
+Notify students automatically before the book return deadline.
 
 ---
 
-## 5. Fee Payment Reminder
+## 3. Attendance Warning Notification
 
-Send automatic reminders to students before the fee submission deadline.
+Send alerts to students whose attendance falls below the required percentage.
 
 ---
 
-# 4. Flow Representation
+## 4. Automatic Faculty Assignment
 
-# Selected Automation:
-Welcome Email After Student Enrollment
+Assign faculty advisors automatically based on department selection.
+
+---
+
+## 5. Scholarship Eligibility Update
+
+Update scholarship status automatically according to student performance.
+
+---
+
+# 4. Flow Illustration
+
+# Selected Process:
+Automatic Admission Confirmation
 
 <img width="315" height="491" alt="DAY4 FLOWCHART drawio" src="https://github.com/user-attachments/assets/f8561cc4-f66f-4449-a10a-96ec48678cfa" />
 
 ---
 
-# 5. Traditional Process vs Automated Process
+# 5. Comparison Between Manual and Automated Systems
 
-## Process: Course Enrollment Notification
+## Process: Attendance Warning System
 
-### Traditional Method
+### Manual Method
 
-* Staff manually verifies enrollment records
-* Emails are sent one by one
-* Requires repeated monitoring
+* Staff checks attendance records manually
+* Students are informed individually
+* Continuous tracking is required
 
-### Challenges in Traditional Method
+### Issues in Manual Method
 
-* Consumes more time
-* Higher chance of mistakes
-* Difficult to handle large student data
-* Delays in communication
+* Requires more effort
+* Risk of missing records
+* Delayed notifications
+* Difficult with large student databases
 
-### Automated Method Using Salesforce
+### Automated Method in Salesforce
 
-* Notifications are sent instantly
-* Reduces manual workload
-* Improves communication speed
-* Ensures accurate and consistent updates
+* Attendance is monitored automatically
+* Warning messages are generated instantly
+* Saves staff time and effort
+* Improves monitoring accuracy
 
 ---
 
-# 6. Importance of Automation in Organizations
+# 6. Benefits of Automation in Enterprise Applications
 
-Automation plays an important role in modern enterprise systems by improving efficiency and reducing repetitive manual work. It helps businesses save time, improve accuracy, and manage operations more effectively. Automated systems also enhance communication, minimize errors, and support faster decision-making in organizations.
+Automation is essential in enterprise applications because it improves operational efficiency and reduces dependency on manual tasks. It helps organizations process information faster, maintain accurate records, and provide better services. Automated systems also support scalability and improve overall productivity.
 
 ---
