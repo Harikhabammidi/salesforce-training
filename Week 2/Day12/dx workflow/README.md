@@ -69,7 +69,7 @@ Commands execute tasks much faster than manual browser actions.
 ---
 
 ## Automation Support
-CLI supports automation scripts and CI/CD pipelines.
+CLI supports automation scripts and CI/CD pipelines..
 
 ---
 
